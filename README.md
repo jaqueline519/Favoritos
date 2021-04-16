@@ -27,3 +27,4 @@ jaquelinesantos2810@gmail.com, jaquelinesantos2810@gmail.com
 ## License
 
 Favoritos is available under the MIT license. See the LICENSE file for more info.
+# Favoritos
