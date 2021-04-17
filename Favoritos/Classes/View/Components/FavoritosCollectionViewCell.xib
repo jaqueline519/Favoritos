@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SjN-LB-cmU" customClass="FavoritosCollectionViewCell" customModule="Favoritos">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="z5V-xq-6pt">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sigla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ell-MM-ZcC">
+                        <rect key="frame" x="69" y="37" width="37" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfj-Gc-cH0">
+                        <rect key="frame" x="69" y="148" width="46" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b63-ub-KEY">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="185"/>
+                        <state key="normal">
+                            <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonDetalhes:" destination="SjN-LB-cmU" eventType="touchUpInside" id="eqH-rI-C5c"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nome Moeda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9R-Aw-m9w">
+                        <rect key="frame" x="28" y="5" width="125" height="24"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P9R-Aw-m9w" firstAttribute="leading" secondItem="z5V-xq-6pt" secondAttribute="leading" constant="28" id="0lB-B6-70l"/>
+                    <constraint firstItem="b63-ub-KEY" firstAttribute="leading" secondItem="z5V-xq-6pt" secondAttribute="leading" id="0zT-UZ-4CX"/>
+                    <constraint firstItem="wfj-Gc-cH0" firstAttribute="leading" secondItem="z5V-xq-6pt" secondAttribute="leading" constant="69" id="4t1-RG-d2P"/>
+                    <constraint firstItem="Ell-MM-ZcC" firstAttribute="leading" secondItem="z5V-xq-6pt" secondAttribute="leading" constant="69" id="6We-fu-z7o"/>
+                    <constraint firstItem="b63-ub-KEY" firstAttribute="top" secondItem="z5V-xq-6pt" secondAttribute="top" id="8Ep-pa-Np1"/>
+                    <constraint firstAttribute="trailing" secondItem="P9R-Aw-m9w" secondAttribute="trailing" constant="27" id="8Mr-Xy-5D4"/>
+                    <constraint firstItem="wfj-Gc-cH0" firstAttribute="top" secondItem="Ell-MM-ZcC" secondAttribute="top" id="A8F-59-Kfv"/>
+                    <constraint firstItem="Ell-MM-ZcC" firstAttribute="centerY" secondItem="z5V-xq-6pt" secondAttribute="centerY" id="F2Q-VU-yex"/>
+                    <constraint firstItem="Ell-MM-ZcC" firstAttribute="top" secondItem="P9R-Aw-m9w" secondAttribute="top" id="HqT-j6-WnN"/>
+                    <constraint firstAttribute="trailing" secondItem="Ell-MM-ZcC" secondAttribute="trailing" constant="74" id="N4v-wf-s0N"/>
+                    <constraint firstAttribute="bottom" secondItem="b63-ub-KEY" secondAttribute="bottom" id="PnM-B2-Ows"/>
+                    <constraint firstItem="Ell-MM-ZcC" firstAttribute="bottom" secondItem="wfj-Gc-cH0" secondAttribute="bottom" id="RdI-5M-6PQ"/>
+                    <constraint firstItem="P9R-Aw-m9w" firstAttribute="centerY" secondItem="z5V-xq-6pt" secondAttribute="centerY" id="TNA-d3-1hI"/>
+                    <constraint firstItem="P9R-Aw-m9w" firstAttribute="top" secondItem="z5V-xq-6pt" secondAttribute="top" constant="5" id="Y2s-7H-mZc"/>
+                    <constraint firstAttribute="trailing" secondItem="b63-ub-KEY" secondAttribute="trailing" id="Zcr-p4-5OD"/>
+                    <constraint firstItem="P9R-Aw-m9w" firstAttribute="bottom" secondItem="Ell-MM-ZcC" secondAttribute="bottom" id="pEZ-xX-C8G"/>
+                    <constraint firstAttribute="trailing" secondItem="wfj-Gc-cH0" secondAttribute="trailing" constant="65" id="qlj-vP-ZWc"/>
+                    <constraint firstItem="wfj-Gc-cH0" firstAttribute="centerY" secondItem="z5V-xq-6pt" secondAttribute="centerY" id="tCb-2K-eQP"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="260" height="181"/>
+            <connections>
+                <outlet property="buttonMudaDeCor" destination="b63-ub-KEY" id="RXV-2F-gQq"/>
+                <outlet property="nomeMoeda" destination="P9R-Aw-m9w" id="nzV-gG-R63"/>
+                <outlet property="siglaMoeda" destination="Ell-MM-ZcC" id="cAh-lw-fZp"/>
+                <outlet property="valorMoeda" destination="wfj-Gc-cH0" id="AwC-Z9-dkF"/>
+            </connections>
+            <point key="canvasLocation" x="-1510.144927536232" y="-424.32065217391306"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
