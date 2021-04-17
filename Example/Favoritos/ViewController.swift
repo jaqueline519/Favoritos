@@ -9,17 +9,17 @@
 import UIKit
 import Favoritos
 
-class ViewController: UIViewController {
 
-    @IBOutlet weak var stackExample: UIStackView!
+class ViewController: UIViewController{
     
-    override func viewDidLoad() {
+    
+    public override func viewDidLoad() {
         super.viewDidLoad()
+    
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-      
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
 }
