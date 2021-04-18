@@ -15,6 +15,8 @@
 		8183B0ED392C7F7A1376A770DCA3000D /* Pods-Favoritos_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB716C40F2E88E97BB5DA6966C60E5E4 /* Pods-Favoritos_Tests-dummy.m */; };
 		9918A56ED51D123D8765EF726287BDB6 /* Pods-Favoritos_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E65B7E29E35CBDB2995B31EDC668C70 /* Pods-Favoritos_Example-dummy.m */; };
 		A11786C9421EFD0CA6D1D3D4948D43A4 /* Pods-Favoritos_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE6F9F9A35E818F20D0256F0D506A0C /* Pods-Favoritos_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA3141B2262BD109005A038D /* ViewTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3141B1262BD108005A038D /* ViewTop.swift */; };
+		EA3141BA262BD181005A038D /* ViewTop.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3141B9262BD181005A038D /* ViewTop.xib */; };
 		EAEA5434262B926100B777C0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAEA5433262B926100B777C0 /* MainStoryboard.storyboard */; };
 		EAEA5441262B9AEC00B777C0 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEA5440262B9AEC00B777C0 /* CollectionViewCell.swift */; };
 		EAEA5449262BA1BA00B777C0 /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEA5448262BA1BA00B777C0 /* FavoritosViewController.swift */; };
@@ -69,6 +71,8 @@
 		E2BEAEAC626272D3ED9BD4F3F639F2B3 /* Pods-Favoritos_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Favoritos_Tests.modulemap"; sourceTree = "<group>"; };
 		E5868AE522F3FB37B41F38FACAC32F20 /* Pods-Favoritos_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Favoritos_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E76B758104E2228AB731849DED3FC144 /* Favoritos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Favoritos.release.xcconfig; sourceTree = "<group>"; };
+		EA3141B1262BD108005A038D /* ViewTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTop.swift; sourceTree = "<group>"; };
+		EA3141B9262BD181005A038D /* ViewTop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewTop.xib; sourceTree = "<group>"; };
 		EAEA5433262B926100B777C0 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EAEA5440262B9AEC00B777C0 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EAEA5448262BA1BA00B777C0 /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			children = (
 				EAEA5448262BA1BA00B777C0 /* FavoritosViewController.swift */,
 				EAEA5440262B9AEC00B777C0 /* CollectionViewCell.swift */,
+				EA3141B1262BD108005A038D /* ViewTop.swift */,
 				6A92D0BDA0E3EE152DC9421871229987 /* Pod */,
 				BD797C55C916152B9A0B1361762C92C6 /* Support Files */,
 				D6A20E96EFC816970D9391803D9C05EA /* View */,
@@ -233,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				EAEA5433262B926100B777C0 /* MainStoryboard.storyboard */,
+				EA3141B9262BD181005A038D /* ViewTop.xib */,
 			);
 			name = View;
 			path = Favoritos/Classes/View;
@@ -372,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3141BA262BD181005A038D /* ViewTop.xib in Resources */,
 				EAEA5434262B926100B777C0 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +408,7 @@
 			files = (
 				EAEA5449262BA1BA00B777C0 /* FavoritosViewController.swift in Sources */,
 				0DA16110775CB411C46904D80993ABAE /* Favoritos-dummy.m in Sources */,
+				EA3141B2262BD109005A038D /* ViewTop.swift in Sources */,
 				EAEA5441262B9AEC00B777C0 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
