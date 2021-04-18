@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'Favoritos_Example' do
   pod 'Favoritos', :path => '../'
@@ -8,6 +8,8 @@ target 'Favoritos_Example' do
   target 'Favoritos_Tests' do
     inherit! :search_paths
 
-    
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+    pod 'Alamofire', '~> 5.2'
+    pod 'AlamofireImage', '~> 4.1'
   end
 end
