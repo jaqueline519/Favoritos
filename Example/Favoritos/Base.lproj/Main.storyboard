@@ -31,6 +31,9 @@
                             <constraint firstItem="mmn-Oe-Edx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="rSB-HN-tJN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackFavoritos" destination="mmn-Oe-Edx" id="pWg-eI-zCG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

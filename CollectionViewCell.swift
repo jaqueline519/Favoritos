@@ -13,4 +13,6 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nomeMoeda: UILabel!
     @IBOutlet weak var sigla: UILabel!
     @IBOutlet weak var valor: UILabel!
+
+
 }
