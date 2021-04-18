@@ -90,10 +90,10 @@
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <size key="customSize" width="181" height="178"/>
                                                 <connections>
-                                                    <outlet property="iconeFavorito" destination="rOU-vo-5Yc" id="TEj-o7-bTh"/>
-                                                    <outlet property="nomeMoeda" destination="66I-CW-Gqy" id="LnY-WF-ZrQ"/>
-                                                    <outlet property="sigla" destination="B2Q-ph-Jdn" id="lig-PL-uGX"/>
-                                                    <outlet property="valor" destination="xnM-Ed-QLR" id="cPK-pT-sPZ"/>
+                                                    <outlet property="iconeFavorito" destination="rOU-vo-5Yc" id="Eci-vJ-TnQ"/>
+                                                    <outlet property="nomeMoeda" destination="66I-CW-Gqy" id="DtV-Sg-TWw"/>
+                                                    <outlet property="sigla" destination="B2Q-ph-Jdn" id="oqf-ig-lP2"/>
+                                                    <outlet property="valor" destination="xnM-Ed-QLR" id="U1U-7b-iNy"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>

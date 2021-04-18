@@ -18,5 +18,16 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "Favoritos/Classes/**/*"
+  "source_files": "Favoritos/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 5.2"
+    ],
+    "AlamofireImage": [
+      "~> 4.1"
+    ],
+    "ModuloCommons": [
+
+    ]
+  }
 }

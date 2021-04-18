@@ -2,18 +2,25 @@ PODS:
   - Alamofire (5.4.1)
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
-  - Favoritos (0.1.0)
+  - Favoritos (0.1.0):
+    - Alamofire (~> 5.2)
+    - AlamofireImage (~> 4.1)
+    - ModuloCommons
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - ModuloCommons (0.1.0):
+    - Alamofire (~> 5.2)
+    - AlamofireImage (~> 4.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - AlamofireImage (~> 4.1)
   - Favoritos (from `../`)
   - FBSnapshotTestCase (~> 2.1.4)
+  - ModuloCommons (from `https://github.com/jonatttan/ModuloCommons.git`)
 
 SPEC REPOS:
   trunk:
@@ -24,13 +31,21 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Favoritos:
     :path: "../"
+  ModuloCommons:
+    :git: https://github.com/jonatttan/ModuloCommons.git
+
+CHECKOUT OPTIONS:
+  ModuloCommons:
+    :commit: 3e0f455e2c36c8016469f18ac25fc54ff3309e18
+    :git: https://github.com/jonatttan/ModuloCommons.git
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
-  Favoritos: fcdfc1446ad79c8ee1ec73825835e32c59d117a9
+  Favoritos: 226da2f13b5171e46b15c34f0d522b45a6469e29
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  ModuloCommons: fe33464dc430261bc595a5666b18c8d6e5b4d2bd
 
-PODFILE CHECKSUM: 2630c5fb59d5dc4c2f2ddb64975982ee5dd9ada3
+PODFILE CHECKSUM: 3787dadc06bea8deed055b9da99a7676d175e227
 
 COCOAPODS: 1.10.1

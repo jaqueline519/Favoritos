@@ -6,11 +6,12 @@
 //
 
 import UIKit
-
-
+import Foundation
+import ModuloCommons
 
 public class FavoritosViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    var moedaInfo: [MoedaInfoElement] = []
     var viewTop: ViewTop?
    
     @IBOutlet weak var stackTop: UIStackView!
@@ -33,12 +34,14 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
         stackTop.addArrangedSubview(myView)
         
     }
+    
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       20
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaFavoritos = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaFavoritos", for: indexPath) as! CollectionViewCell
+        
         
         return celulaFavoritos
     }
