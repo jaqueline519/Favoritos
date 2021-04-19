@@ -30,7 +30,7 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
     
     func setupUI(){
         let myView = ViewTop().loadNib()
-        myView.backgroundColor = .black
+        myView.backgroundColor = .corSecundaria()
         stackTop.addArrangedSubview(myView)
         
     }
@@ -41,6 +41,8 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaFavoritos = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaFavoritos", for: indexPath) as! CollectionViewCell
+        celulaFavoritos.backgroundColor = UIColor.corPrimaria()
+        colecaoFavoritos.backgroundColor = UIColor.corSecundaria()
 
 
         return celulaFavoritos
