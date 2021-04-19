@@ -13,7 +13,7 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
     
     var moedaInfo: [MoedaInfoElement] = []
     var viewTop: ViewTop?
-   
+    
     @IBOutlet weak var stackTop: UIStackView!
     
     @IBOutlet weak var colecaoFavoritos: UICollectionView!
@@ -41,8 +41,9 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaFavoritos = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaFavoritos", for: indexPath) as! CollectionViewCell
-        celulaFavoritos.backgroundColor = UIColor.corPrimaria()
+        celulaFavoritos.backgroundColor = UIColor.corSecundaria()
         colecaoFavoritos.backgroundColor = UIColor.corSecundaria()
+//        viewDentro.backgroundColor = UIColor.corPrimaria()
 
 
         return celulaFavoritos
