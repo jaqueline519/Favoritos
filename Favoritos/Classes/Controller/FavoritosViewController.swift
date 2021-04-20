@@ -13,6 +13,7 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
     
     var moedaInfo: [MoedaInfoElement] = []
     var viewTop: ViewTop?
+    var moedasFavoritadas = ["BTC","ETH"]
     
     @IBOutlet weak var stackTop: UIStackView!
     
@@ -36,13 +37,16 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      20
+        return moedasFavoritadas.count
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaFavoritos = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaFavoritos", for: indexPath) as! CollectionViewCell
         celulaFavoritos.backgroundColor = UIColor.corSecundaria()
         colecaoFavoritos.backgroundColor = UIColor.corSecundaria()
+        InfoMoedaAPI().requestInfoMoedas(id: self.moedasFavoritadas[indexPath.row]) { (moeda) in
+            celulaFavoritos.formataCelula(moeda[0])
+        }
 //        viewDentro.backgroundColor = UIColor.corPrimaria()
 
 
