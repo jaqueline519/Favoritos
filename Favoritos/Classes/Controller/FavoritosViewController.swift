@@ -13,7 +13,7 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
     
     var moedaInfo: [MoedaInfoElement] = []
     var viewTop: ViewTop?
-    var moedasFavoritadas = ["BTC","ETH"]
+    public var moedasFavoritadas = ["BTC","ETH","PLN","AUD"]
     
     @IBOutlet weak var stackTop: UIStackView!
     
@@ -26,13 +26,18 @@ public class FavoritosViewController: UIViewController, UICollectionViewDelegate
         super.viewDidLoad()
         colecaoFavoritos.delegate = self
         colecaoFavoritos.dataSource = self
-        setupUI()
     }
     
-    func setupUI(){
+    public override func viewWillAppear(_ animated: Bool) {
+//        setupUI()
+    }
+    
+    public func setupUI(_ listaFavoritadas: [String]) {
         let myView = ViewTop().loadNib()
         myView.backgroundColor = .corSecundaria()
         stackTop.addArrangedSubview(myView)
+        self.moedasFavoritadas = listaFavoritadas
+        colecaoFavoritos.reloadData()
         
     }
 
@@ -64,7 +69,7 @@ extension UIViewController {
         }
         return bundle
     }
-    public class func fromSB() -> Self {
+    public class func fromSB(_ lista: [String]) -> Self {
         return fromSB(viewType: self)
     }
     public class func fromSB<T: UIViewController>(viewType: T.Type) -> T {

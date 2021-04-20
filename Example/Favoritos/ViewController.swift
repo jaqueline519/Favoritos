@@ -14,7 +14,7 @@ class ViewController: UIViewController{
     
     
     var chamaViewController: FavoritosViewController?
-    
+    var moedasFavoritadas = ["BTC","ETH","PLN","AUD"]
     @IBOutlet weak var stackFavoritos: UIStackView!
     
     public override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController{
     }
     
         func showDetailsAction() {
-            let viewC = FavoritosViewController.fromSB()
+            let viewC = FavoritosViewController.fromSB(moedasFavoritadas)
             self.present(viewC, animated: true, completion: nil)
         }
     
