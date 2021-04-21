@@ -13,7 +13,7 @@ import Favoritos
 class ViewController: UIViewController{
     
     
-    var chamaViewController: FavoritosViewController?
+//    var chamaViewController: FavoritosViewController?
     var moedasFavoritadas = ["BTC","ETH","PLN","AUD"]
     @IBOutlet weak var stackFavoritos: UIStackView!
     
@@ -26,7 +26,6 @@ class ViewController: UIViewController{
         showDetailsAction()
         
     }
-    
         func showDetailsAction() {
             let viewC = FavoritosViewController.fromSB(moedasFavoritadas)
             self.present(viewC, animated: true, completion: nil)
@@ -36,6 +35,7 @@ class ViewController: UIViewController{
         super.didReceiveMemoryWarning()
      
     }
+
 
 }
 
