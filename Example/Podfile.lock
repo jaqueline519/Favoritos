@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (5.4.1)
-  - AlamofireImage (4.1.0):
-    - Alamofire (~> 5.1)
+  - Alamofire (5.4.2)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
   - Favoritos (0.1.0):
     - Alamofire (~> 5.2)
     - AlamofireImage (~> 4.1)
@@ -36,12 +36,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ModuloCommons:
-    :commit: 49d5b80713ae95a651fedf4976644c979ef5cb66
+    :commit: cdbaf95ac3007314ccb5cad2437c21491ac7d4e7
     :git: https://github.com/jonatttan/ModuloCommons.git
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
-  AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Favoritos: 226da2f13b5171e46b15c34f0d522b45a6469e29
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   ModuloCommons: fe33464dc430261bc595a5666b18c8d6e5b4d2bd
