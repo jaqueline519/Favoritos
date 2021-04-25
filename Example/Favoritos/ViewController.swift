@@ -10,7 +10,7 @@ import UIKit
 import Favoritos
 
 
-class ViewController: UIViewController, FavoritosDelegate {
+class ViewController: UIViewController, FavoritosDelegate, FavoriteDelegate {
     
 //    var chamaViewController: FavoritosViewController?
     var moedasFavoritadas = ["BTC","ETH","PLN","AUD"]
@@ -19,6 +19,7 @@ class ViewController: UIViewController, FavoritosDelegate {
     public override func viewDidLoad() {
         super.viewDidLoad()
         ViewTop().setupUI(delegate: self)
+        FavoritosViewController().setupUI(self)
     }
     
     override func viewDidAppear(_ animated: Bool) {

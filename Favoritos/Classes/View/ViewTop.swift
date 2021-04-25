@@ -8,7 +8,6 @@
 import UIKit
 public protocol FavoritosDelegate: class {
     func viewFavoritosAction()
-    func voltar()
 }
 
 public class ViewTop: UIView {
@@ -16,7 +15,6 @@ public class ViewTop: UIView {
     @IBOutlet weak var MoedaDigital: UILabel!
     @IBOutlet weak var Data: UILabel!
     var favoritoDelegate: FavoritosDelegate?
-    var actionVoltar: (() -> Void)?
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -31,15 +29,6 @@ public class ViewTop: UIView {
         self.favoritoDelegate = delegate
         let viewTopo = ViewTop().loadNib()
         viewTopo.backgroundColor = UIColor.corPrimaria()
-    }
-
-    @IBAction func bttnVoltar(_ sender: UIButton) {
-        if let acaoRetornar = self.actionVoltar {
-            acaoRetornar()
-        } else {
-            self.favoritoDelegate?.voltar()
-        }
-        print("-----Opa, vamos voltar")
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController storyboardIdentifier="MainStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oVC-7n-zhu" customClass="FavoritosViewController" customModule="Favoritos" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f4f-Js-qrZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-ft-ael">
-                                <rect key="frame" x="5" y="94" width="404" height="642"/>
+                                <rect key="frame" x="5" y="94" width="365" height="573"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" sectionInsetReference="layoutMargins" id="A1R-0r-77h">
@@ -89,22 +89,40 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-CB-pcd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-CB-pcd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-Bj-PhN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljg-fF-be1" userLabel="&lt; Voltar">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                                <state key="normal" title="   &lt; Voltar"/>
+                                                <connections>
+                                                    <action selector="bttnVoltar:" destination="oVC-7n-zhu" eventType="touchUpInside" id="f7s-Jc-Mln"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ljg-fF-be1" firstAttribute="leading" secondItem="pZE-Bj-PhN" secondAttribute="leading" id="g6y-lB-woj"/>
+                                            <constraint firstItem="Ljg-fF-be1" firstAttribute="top" secondItem="pZE-Bj-PhN" secondAttribute="top" id="mg8-wf-09v"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ljg-fF-be1" secondAttribute="trailing" id="nwj-Qa-uVO"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ljg-fF-be1" secondAttribute="bottom" id="owl-gQ-U17"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ej1-MP-XWb"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LaV-ft-ael" firstAttribute="leading" secondItem="f4f-Js-qrZ" secondAttribute="leading" constant="5" id="3Sg-fu-oan"/>
-                            <constraint firstAttribute="trailing" secondItem="PBU-CB-pcd" secondAttribute="trailing" id="Ddo-Qb-dUf"/>
                             <constraint firstItem="LaV-ft-ael" firstAttribute="top" secondItem="Ej1-MP-XWb" secondAttribute="top" constant="94" id="OCv-8q-kgH"/>
+                            <constraint firstItem="PBU-CB-pcd" firstAttribute="leading" secondItem="Ej1-MP-XWb" secondAttribute="leading" id="PPc-iC-nuY"/>
                             <constraint firstItem="LaV-ft-ael" firstAttribute="bottom" secondItem="Ej1-MP-XWb" secondAttribute="bottom" id="SMi-hJ-1nV"/>
+                            <constraint firstItem="PBU-CB-pcd" firstAttribute="trailing" secondItem="Ej1-MP-XWb" secondAttribute="trailing" id="biS-Yf-Ij0"/>
                             <constraint firstItem="Ej1-MP-XWb" firstAttribute="trailing" secondItem="LaV-ft-ael" secondAttribute="trailing" constant="5" id="dcr-WG-tUD"/>
-                            <constraint firstItem="Ej1-MP-XWb" firstAttribute="bottom" secondItem="PBU-CB-pcd" secondAttribute="bottom" constant="640" id="fYm-GC-day"/>
-                            <constraint firstItem="PBU-CB-pcd" firstAttribute="top" secondItem="Ej1-MP-XWb" secondAttribute="top" id="ogW-Na-Oos"/>
-                            <constraint firstItem="PBU-CB-pcd" firstAttribute="leading" secondItem="f4f-Js-qrZ" secondAttribute="leading" id="xY4-jH-8B8"/>
+                            <constraint firstItem="PBU-CB-pcd" firstAttribute="top" secondItem="Ej1-MP-XWb" secondAttribute="top" id="mU4-IW-Uas"/>
+                            <constraint firstItem="LaV-ft-ael" firstAttribute="top" secondItem="PBU-CB-pcd" secondAttribute="bottom" id="n2r-2s-mwJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -114,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5H-gN-goa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394.20289855072468" y="51.358695652173914"/>
+            <point key="canvasLocation" x="-394.39999999999998" y="50.824587706146929"/>
         </scene>
     </scenes>
     <resources>

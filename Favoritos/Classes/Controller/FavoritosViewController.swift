@@ -8,11 +8,18 @@
 import UIKit
 import ModuloCommons
 
+public protocol FavoriteDelegate: class {
+    func voltar()
+}
+
 public class FavoritosViewController: UIViewController, UICollectionViewDataSource {
+    
     
     var moedaInfo: [MoedaInfoElement] = []
 //    var viewTop: ViewTop?
     public var moedasFavoritadas = ["BTC","ETH","PLN","AUD"]
+    var voltarDelegate: FavoriteDelegate?
+    var acaoVoltar: (() -> Void)?
     
     @IBOutlet weak var stackTop: UIStackView!
     @IBOutlet weak var colecaoFavoritos: UICollectionView!
@@ -27,6 +34,10 @@ public class FavoritosViewController: UIViewController, UICollectionViewDataSour
         self.configuraView(titulo: "Moeda Digital", y: 160, cor: .corTexto())
     }
     
+    public func setupUI(_ delegate: FavoriteDelegate) {
+        self.voltarDelegate = delegate
+    }
+    
     public override func viewWillAppear(_ animated: Bool) {
 //        setupUI()
     }
@@ -36,11 +47,13 @@ public class FavoritosViewController: UIViewController, UICollectionViewDataSour
         tituloLabel.text = String()
         tituloLabel.textAlignment = .center
         tituloLabel.backgroundColor = .corTexto()
-       stackTop.addArrangedSubview(tituloLabel)
+//       stackTop.addArrangedSubview(tituloLabel)
         
         let myView = ViewTop().loadNib()
         myView.backgroundColor = .corSecundaria()
         stackTop.addArrangedSubview(myView)
+        let viewQualquer = UIView()
+        stackTop.addArrangedSubview(viewQualquer)
     }
     
     public func setupUI(_ listaFavoritadas: [String]) {
@@ -48,6 +61,14 @@ public class FavoritosViewController: UIViewController, UICollectionViewDataSour
         self.moedasFavoritadas = listaFavoritadas
         colecaoFavoritos.reloadData()
         
+    }
+    @IBAction func bttnVoltar(_ sender: UIButton) {
+        if let acaoRetornar = self.acaoVoltar {
+                acaoRetornar()
+            } else {
+                self.voltarDelegate?.voltar()
+            }
+            print("-----Opa, vamos voltar")
     }
     
    
