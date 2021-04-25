@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		89CD24792635088A00F6D3A0 /* PrimeiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD24782635088900F6D3A0 /* PrimeiraViewController.swift */; };
 		F069A07C53BE51ACE67A525C /* Pods_Favoritos_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECBABA1331E497BBC465D73 /* Pods_Favoritos_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		607FACE51AFB9204008FA782 /* Favoritos_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Favoritos_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		89CD24782635088900F6D3A0 /* PrimeiraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeiraViewController.swift; sourceTree = "<group>"; };
 		A26A731E1A0E09DBD43795CF /* Pods_Favoritos_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favoritos_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0A226806D5E4DA46E76CC2 /* Pods-Favoritos_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favoritos_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Favoritos_Tests/Pods-Favoritos_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3422BD75B3F213E7A869461 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				89CD24782635088900F6D3A0 /* PrimeiraViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CD24792635088A00F6D3A0 /* PrimeiraViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

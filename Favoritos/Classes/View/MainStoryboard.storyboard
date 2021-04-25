@@ -89,9 +89,8 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-CB-pcd">
-                                <rect key="frame" x="-1" y="0.0" width="416" height="96"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PBU-CB-pcd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
@@ -99,9 +98,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="LaV-ft-ael" firstAttribute="leading" secondItem="f4f-Js-qrZ" secondAttribute="leading" constant="5" id="3Sg-fu-oan"/>
+                            <constraint firstAttribute="trailing" secondItem="PBU-CB-pcd" secondAttribute="trailing" id="Ddo-Qb-dUf"/>
+                            <constraint firstItem="LaV-ft-ael" firstAttribute="top" secondItem="Ej1-MP-XWb" secondAttribute="top" constant="94" id="OCv-8q-kgH"/>
                             <constraint firstItem="LaV-ft-ael" firstAttribute="bottom" secondItem="Ej1-MP-XWb" secondAttribute="bottom" id="SMi-hJ-1nV"/>
                             <constraint firstItem="Ej1-MP-XWb" firstAttribute="trailing" secondItem="LaV-ft-ael" secondAttribute="trailing" constant="5" id="dcr-WG-tUD"/>
-                            <constraint firstItem="LaV-ft-ael" firstAttribute="top" secondItem="Ej1-MP-XWb" secondAttribute="top" constant="94" id="u9h-Aj-W0a"/>
+                            <constraint firstItem="Ej1-MP-XWb" firstAttribute="bottom" secondItem="PBU-CB-pcd" secondAttribute="bottom" constant="640" id="fYm-GC-day"/>
+                            <constraint firstItem="PBU-CB-pcd" firstAttribute="top" secondItem="Ej1-MP-XWb" secondAttribute="top" id="ogW-Na-Oos"/>
+                            <constraint firstItem="PBU-CB-pcd" firstAttribute="leading" secondItem="f4f-Js-qrZ" secondAttribute="leading" id="xY4-jH-8B8"/>
                         </constraints>
                     </view>
                     <connections>

@@ -10,8 +10,7 @@ import UIKit
 import Favoritos
 
 
-class ViewController: UIViewController{
-    
+class ViewController: UIViewController, FavoritosDelegate {
     
 //    var chamaViewController: FavoritosViewController?
     var moedasFavoritadas = ["BTC","ETH","PLN","AUD"]
@@ -19,6 +18,7 @@ class ViewController: UIViewController{
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        ViewTop().setupUI(delegate: self)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,12 +28,21 @@ class ViewController: UIViewController{
     }
         func showDetailsAction() {
             let viewC = FavoritosViewController.fromSB(moedasFavoritadas)
+            viewC.modalPresentationStyle = .fullScreen
             self.present(viewC, animated: true, completion: nil)
         }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
      
+    }
+    func viewFavoritosAction() {
+        // slá, acho que chamada da detalhes.
+    }
+    
+    func voltar() {
+        self.dismiss(animated: true, completion: nil)
+        print("-----Opa, vamos voltar")
     }
 
 
